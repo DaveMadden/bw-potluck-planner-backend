@@ -17,7 +17,7 @@ require('dotenv').config()
 */
 const pg = require('pg')
 
-if (process.env.DATABASE_URL) {
+if (process.env.DATABASE_URL) { //pulled from heroku
   pg.defaults.ssl = { rejectUnauthorized: false }
 }
 
